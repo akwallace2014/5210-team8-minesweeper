@@ -1,0 +1,51 @@
+#configGrid {
+    -fx-padding: 10;
+    -fx-vgap: 20;
+}
+
+.configPane {
+    -fx-vgap: 7;
+}
+
+.configButton, .configLabel {
+    -fx-font-size: 14;
+}
+
+.configBox {
+    -fx-translate-y: 2;
+    -fx-translate-x: 2;
+}
+
+.configBox:focused {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+}
+
+.configButton:focused {
+    -fx-background-color: -fx-outer-border, -fx-inner-border, -fx-body-color; 
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5, 4, 3;
+}
+
+.combo-box-popup .list-cell:selected {
+    -fx-background-color: linear-gradient(to top right, #f8f8f8 , #d8d8d8 );
+}
+
+.combo-box-popup .list-cell:hover {
+    -fx-background-color: linear-gradient(to top right, #e8e8e8 , #b8b8b8 );
+}
+
+.border-title-pane-label {
+    -fx-background-color: #f8f8f8;
+}
+
+.border-title-pane {
+    -fx-border-insets: 10;
+    -fx-background-color: linear-gradient(to bottom right, #f8f8f8 80%, lightcyan);
+    -fx-border-color: #83c5be;
+}
+
+.border-title-pane-content {
+    -fx-padding: 26 15 15 15;
+}

@@ -1,0 +1,14 @@
+.border-title-pane-label {
+   
+    -fx-translate-y: -10;
+    -fx-translate-x: 10;
+    -fx-font-size: 13;
+}
+
+.border-title-pane {
+    -fx-content-display: top;
+    -fx-border-width: 0.75px;
+    -fx-border-radius: 5;
+}
+
+
