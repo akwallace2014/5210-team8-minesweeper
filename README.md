@@ -22,4 +22,4 @@ Follow these steps to get this repository set-up in IntelliJ to build and run.
 
 4. Make sure you have JUnit 5 as part of the projects libraries. The easier way to do this (if NOT already incorporated into your project libraries) is to follow the intelliJ recommended import as seen in the right-click menu below from any of the testing class' import statetments. ![enter image description here](https://i.imgur.com/GjdKocp.png)
 
-5. Run Test Suite or Build in Play! 
+5. Run Test Suite or Build and Play! 
