@@ -24,8 +24,7 @@ class GameConfigsTest {
     void getCSS_theme_null_illegalStateException() {
         Exception exception = assertThrows(IllegalStateException.class,() -> {
             GameConfigs test = new GameConfigs();
-            test.getCSS();
-        });
+            test.getCSS();  });
         String expectedMessage = "No value corresponding to \"theme\" key";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
@@ -51,8 +50,7 @@ class GameConfigsTest {
     void register_themeValue_wrongValue_illegalArgumentException() {
         Exception exception = assertThrows(IllegalArgumentException.class,() -> {
             GameConfigs test = new GameConfigs();
-            test.register("theme", "wrongObject");
-        });
+            test.register("theme", "wrongObject");  });
         String expectedMessage = "\"theme\" key must correspond to instance of Theme value. " +
                 "(Passed: class java.lang.String)";
         String actualMessage = exception.getMessage();
@@ -70,8 +68,7 @@ class GameConfigsTest {
     void register_difficultyValue_wrongValue_illegalArgumentException() {
         Exception exception = assertThrows(IllegalArgumentException.class,() -> {
             GameConfigs test = new GameConfigs();
-            test.register("difficulty", "wrongObject");
-        });
+            test.register("difficulty", "wrongObject"); });
         String expectedMessage = "\"difficulty\" key must correspond to instance of Difficulty value. " +
                 "(Passed: class java.lang.String)";
         String actualMessage = exception.getMessage();
@@ -104,8 +101,7 @@ class GameConfigsTest {
     void get_key_null_IllegalStateException() {
         Exception exception = assertThrows(IllegalStateException.class,() -> {
             GameConfigs test = new GameConfigs();
-            test.get("key");
-        });
+            test.get("key");    });
         String expectedMessage = "No value corresponding to \"key\" key";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
@@ -128,8 +124,7 @@ class GameConfigsTest {
     void getDifficulty_difficulty_null_IllegalStateException() {
         Exception exception = assertThrows(IllegalStateException.class,() -> {
             GameConfigs test = new GameConfigs();
-            test.getDifficulty();
-        });
+            test.getDifficulty();   });
         String expectedMessage = "No value corresponding to \"difficulty\" key";
         String actualMessage = exception.getMessage();
         assertTrue(actualMessage.contains(expectedMessage));
