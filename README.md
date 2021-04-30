@@ -12,7 +12,7 @@ I'm also planning to introduce classic MineSweeper like theme. (Winows 95-XP)
 ## ![enter image description here](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_60,h_60/https://dashboard.snapcraft.io/site_media/appmedia/2017/11/icon_CE_256_2Qe5uEl.png) IntelliJ IDE Set-Up and Building 
 Follow these steps to get this repository set-up in IntelliJ to build and run. 
 
-1. Close repository locally (File --> New --> Project from Version Control.. )
+1. Clone repository locally (File --> New --> Project from Version Control.. )
 	Paste in the repo URL and click *Clone*.
 			<a href="https://www.youtube.com/watch?v=aBVOAnygcZw&t=76s&ab_channel=IntelliJIDEAbyJetBrains">IntelliJ Instructions </a>
 
