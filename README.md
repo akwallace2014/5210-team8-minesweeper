@@ -20,7 +20,7 @@ Follow these steps to get this repository set-up in IntelliJ to build and run.
 
 3.  Verify that your Project is set to use a JDK that supports JavaFX to do this navigate to File --> Project Structure --> Project Settings --> Project --> Project SDK  |  The JavaFX SDK and Runtime are included in the JDK, starting with Java SE 7 Update 2. Download the JDK bundle from the [JavaFX Downloads page](http://www.oracle.com/technetwork/java/javafx/downloads/index.html), then go to the [JDK Installation Guide](http://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html). Or use a OpenJDK that supports JavaFX (Corretto 1.8 works fine)
 
-4. Make sure you have JUnit 5 as part of the projects libraries. The easier way to do this (if NOT already incorporated into your project libraries) is to follow the intelliJ recommended import as seen in the right-click menu below from any of the testing class' import statetments.
+4. Make sure you have JUnit 5 as part of the projects libraries. The easier way to do this (if NOT already incorporated into your project libraries) is to follow the intelliJ recommended import as seen in the right-click menu below from any of the testing class' import statetments. <br />
 ![enter image description here](https://i.imgur.com/GjdKocp.png)
 
 5. Run Test Suite or Build and Play! 
