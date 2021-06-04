@@ -6,8 +6,9 @@ plugins {
 group 'me.dzikimlecz'
 version '1.2'
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+apply plugin: 'java'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
 jar {
     manifest {
@@ -21,6 +22,11 @@ sourceSets {
             srcDirs 'src\\main\\java'
         }
     })
+    test {
+        java {
+            srcDirs 'src\\main\\java\\test'
+        }
+    }
 }
 
 mainClassName = 'main.Main'
@@ -35,5 +41,23 @@ dependencies {
     implementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     implementation 'org.mockito:mockito-core:2.2.2'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 //    testImplementation group: 'junit', name: 'junit', version: '4.12'
+}
+
+test {
+    useJUnitPlatform()
+
+    dependsOn 'cleanTest'
+
+    maxHeapSize = '1G'
+
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+
+    afterTest { desc, result ->
+        logger.quiet "Executing test ${desc.name} [${desc.className}] with result: ${result.resultType}"
+    }
+
 }

@@ -19,4 +19,10 @@ public class SampleTest {
     public void sampleTest() {
         assertTrue(true);
     }
+
+    @Test
+    public void sampleTestFailure() {
+        assertTrue(2 == 2);
+        assertTrue(2 == 1);
+    }
 }
