@@ -8,11 +8,19 @@ I'm also planning to introduce classic MineSweeper like theme. (Winows 95-XP)
 <a href="https://www.flaticon.com/authors/pixel-perfect ">Pixel perfect</a>
  from <a href="http://www.flaticon.com/">www.flaticon.com</a></p>
 
-## IDE Set-Up and Building
+
+## ![enter image description here](https://res.cloudinary.com/canonical/image/fetch/f_auto,q_auto,fl_sanitize,w_60,h_60/https://dashboard.snapcraft.io/site_media/appmedia/2017/11/icon_CE_256_2Qe5uEl.png) IntelliJ IDE Set-Up and Building 
 Follow these steps to get this repository set-up in IntelliJ to build and run. 
 
-1. Close repository locally (File --> New --> Project from Version Control.. )
+1. Clone repository locally (File --> New --> Project from Version Control.. )
 	Paste in the repo URL and click *Clone*.
 			<a href="https://www.youtube.com/watch?v=aBVOAnygcZw&t=76s&ab_channel=IntelliJIDEAbyJetBrains">IntelliJ Instructions </a>
-2. ![Verify that your Gradle JVM is set to OpenJDK 1.8 (Amazon Corretto used here)](https://imgur.com/gallery/m2a6Xju)
-3. 
+
+2. Verify that your current Gradle JVM is set to one of a JDK of v1.8. (Amazon Corretto shown here) To do so navigate to Settings --> Build, Execution, Deployment --> Build Tools --> Gradle --> Gradle JVM ![Verify Gradle JVM](https://i.imgur.com/ASq5Fhu.png)
+
+3.  Verify that your Project is set to use a JDK that supports JavaFX to do this navigate to File --> Project Structure --> Project Settings --> Project --> Project SDK  |  The JavaFX SDK and Runtime are included in the JDK, starting with Java SE 7 Update 2. Download the JDK bundle from the [JavaFX Downloads page](http://www.oracle.com/technetwork/java/javafx/downloads/index.html), then go to the [JDK Installation Guide](http://docs.oracle.com/javase/7/docs/webnotes/install/windows/jdk-installation-windows.html). Or use a OpenJDK that supports JavaFX (Corretto 1.8 works fine)
+
+4. Make sure you have JUnit 5 as part of the projects libraries. The easier way to do this (if NOT already incorporated into your project libraries) is to follow the intelliJ recommended import as seen in the right-click menu below from any of the testing class' import statetments. <br />
+![enter image description here](https://i.imgur.com/GjdKocp.png)
+
+5. Run Test Suite or Build and Play! 
